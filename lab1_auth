@@ -1,0 +1,30 @@
+Lab 1 - Auth - username enumeration via different responses
+
+Steps she does:
+- enumerate the username
+- enumerate the password
+
+
+Username: access
+password: jessica
+
+
+
+how:
+
+- Used burpintruder to enumerate the username ( we were given a word list )
+- samething for password
+
+Username we looked at length from the intruder attack
+password we looked at status from the intruder attack
+
+
+
+
+
+
+
+
+
+List of Flaws:
+- outputs a verbose message on the username

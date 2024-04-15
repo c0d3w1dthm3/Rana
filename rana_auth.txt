@@ -1,0 +1,71 @@
+Broken Auth: 
+
+# Names 
+- Auth Flaw
+> Auth is when it confirms the user is who they say they are. 
+
+
+# Types
+
+- HTML form-based authentication
+- Multi-factor mechanisms
+
+
+# Flaws
+
+******** Weak Password Requirements ********
+
+Having no or minimal controls over the quality of users' passwords.
+- very short
+- common dictionary words or Names
+- use of default passwords
+- missing or ineffective MFA
+
+******** Improper Restriction of Authentication Attempts ********
+
+Applucation permits brute force or other automated attacks.
+- login page
+- OTP / MFA page
+- Change Password page
+
+******** Verbose Error Message ********
+
+The application outputs a verbose error message that allows for username enumeration
+
+- 'incorrect username'
+- 'incorrect password'
+- 'this name already exsists'
+
+******** Vulnerable Transmission of Credentials ********
+
+- HTTPS vs HTTPS
+The application uses an unencrupted HTTP connection to transmit login credentials
+
+
+
+
+
+
+
+
+
+# Note:
+
+1. 
+>If customer is using off-the-shelf online software > check to see if the software ships with default credentials.
+- if it does then test those default creds against usernames -->> look up the default creds for that software
+
+2.
+Look up users email accounts & see if there have been breaches that they've been apart of & then check if those sync
+with their daily passwords ( netflex, instagram, etc ) -->> CHECK the CASMM as a guide
+
+
+
+
+
+
+
+
+Additional Info:
+
+- CASMM
