@@ -1,0 +1,11 @@
+{
+  "id": "PERM-001",
+  "name": "Dangerous tool auto-approved without a gate",
+  "severity": "critical",
+  "category": "permissions",
+  "check": "dangerous_tool_autoapproved",
+  "params": {},
+  "rationale": "A write/exec-capable tool that is auto-allowed with no PreToolUse hook can act unattended, turning prompt injection or a bad plan step into real-world impact.",
+  "remediation": "Remove wildcard allows; gate write/exec tools behind a PreToolUse hook that validates the call or requires confirmation.",
+  "maps_to": []
+}

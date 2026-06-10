@@ -1,0 +1,16 @@
+[project]
+name = "agentscan"
+version = "0.0.1"
+description = "Static security posture scanner for agentic AI stacks"
+requires-python = ">=3.10"
+dependencies = []                      # zero third-party deps by design
+
+[project.optional-dependencies]
+yaml = ["pyyaml>=6.0"]                 # optional: only if you author rules in YAML
+
+[project.scripts]
+agentscan = "agentscan.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

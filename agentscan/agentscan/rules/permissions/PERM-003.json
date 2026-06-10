@@ -1,0 +1,4 @@
+{ "id": "PERM-003", "name": "No explicit deny list", "severity": "info",
+  "category": "permissions", "check": "no_deny_list", "params": {},
+  "rationale": "With allows but no denies, there is no defense-in-depth backstop if an allow is later widened by mistake.",
+  "remediation": "Add an explicit deny list for high-risk tools so a broadened allow cannot silently re-enable them.", "maps_to": [] }

@@ -1,0 +1,11 @@
+{
+  "id": "HOOK-001",
+  "name": "No tool-use audit logging",
+  "severity": "medium",
+  "category": "hooks",
+  "check": "no_audit_logging",
+  "params": {},
+  "rationale": "With no PostToolUse hook there is no audit trail of which tools the agent invoked, so misuse is undetectable after the fact.",
+  "remediation": "Add a PostToolUse hook that logs tool name, inputs, and outcome to durable storage.",
+  "maps_to": []
+}

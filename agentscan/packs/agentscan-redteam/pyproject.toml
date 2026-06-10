@@ -1,0 +1,19 @@
+[project]
+name = "agentscan-redteam"
+version = "0.0.1"
+description = "Paid active-probe pack for agentscan (illustrative scaffold)"
+requires-python = ">=3.10"
+dependencies = ["agentscan"]          # + your LLM SDK in production
+
+[project.entry-points."agentscan.plugins"]
+redteam = "agentscan_redteam"
+
+[tool.setuptools]
+packages = ["agentscan_redteam"]
+
+[tool.setuptools.package-data]
+agentscan_redteam = ["rules/*.json"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

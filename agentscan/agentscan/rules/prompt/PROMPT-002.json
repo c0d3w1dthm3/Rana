@@ -1,0 +1,10 @@
+{ "id": "PROMPT-002", "name": "Risky self-authored directive in instructions", "severity": "medium",
+  "category": "prompt", "check": "risky_directive_in_claude_md",
+  "params": { "patterns": [
+    "ignore (all )?previous instructions",
+    "fetch .* and (run|execute)",
+    "execute (any|whatever) (code|commands?)",
+    "disable .*(safety|guardrails?)"
+  ] },
+  "rationale": "The agent's own instructions tell it to auto-execute external content or drop guardrails — a self-inflicted injection surface.",
+  "remediation": "Remove auto-execute directives; require validation or human confirmation before acting on fetched content.", "maps_to": [] }

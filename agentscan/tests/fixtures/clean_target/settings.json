@@ -1,0 +1,4 @@
+{
+  "permissions": { "allow": ["Read", "Grep"], "deny": ["Bash"] },
+  "hooks": { "PreToolUse": [{ "matcher": "*" }], "PostToolUse": [{ "matcher": "*" }] }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "MCP-001",
+  "name": "Unpinned MCP server",
+  "severity": "high",
+  "category": "mcp-trust",
+  "check": "mcp_server_unpinned",
+  "params": {},
+  "rationale": "An unpinned MCP server can change behavior or be supply-chain-compromised between runs while the agent grants it tool access on trust.",
+  "remediation": "Pin the server to a specific version or content hash; prefer vendored/local servers for anything with write or network capability.",
+  "maps_to": []
+}

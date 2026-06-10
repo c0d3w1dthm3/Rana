@@ -1,0 +1,4 @@
+{ "id": "MEM-001", "name": "Environment values embedded in config", "severity": "low",
+  "category": "memory", "check": "env_embedded_in_config", "params": {},
+  "rationale": "Env values baked into agent config propagate to tool subprocesses and can leak into logs, memory, or transcripts.",
+  "remediation": "Inject secrets at runtime from a secret manager; keep them out of committed config.", "maps_to": [] }

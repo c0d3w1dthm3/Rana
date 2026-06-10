@@ -1,0 +1,4 @@
+{ "id": "PROMPT-001", "name": "No agent instruction file", "severity": "low",
+  "category": "prompt", "check": "claude_md_missing", "params": {},
+  "rationale": "With no CLAUDE.md there are no documented guardrails or trust boundaries for the agent's behavior, so safe defaults are unstated.",
+  "remediation": "Add a CLAUDE.md that states trust boundaries and how to treat untrusted/external content.", "maps_to": [] }

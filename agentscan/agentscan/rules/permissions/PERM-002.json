@@ -1,0 +1,4 @@
+{ "id": "PERM-002", "name": "Wildcard tool permission", "severity": "medium",
+  "category": "permissions", "check": "wildcard_permission_present", "params": {},
+  "rationale": "A wildcard allow grants every current and future tool, including ones added later, defeating least-privilege even when a gate exists.",
+  "remediation": "Replace the wildcard with an explicit allowlist of the specific tools the agent needs.", "maps_to": [] }

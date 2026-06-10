@@ -1,0 +1,4 @@
+{ "id": "HOOK-002", "name": "PreToolUse hook doesn't cover a dangerous tool", "severity": "high",
+  "category": "hooks", "check": "pretool_missing_dangerous_coverage", "params": {},
+  "rationale": "A PreToolUse hook exists but its matchers leave a write/exec-capable tool ungated, so that tool runs unchecked.",
+  "remediation": "Add a matcher covering each dangerous tool (or use a '*' matcher) in PreToolUse.", "maps_to": [] }

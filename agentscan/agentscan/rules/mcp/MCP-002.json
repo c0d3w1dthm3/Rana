@@ -1,0 +1,4 @@
+{ "id": "MCP-002", "name": "MCP server over insecure transport", "severity": "high",
+  "category": "mcp-trust", "check": "mcp_insecure_transport", "params": {},
+  "rationale": "An MCP server loaded over plaintext http:// can be intercepted or spoofed on the network, and the agent grants it tool access on trust.",
+  "remediation": "Use https:// (or a local stdio server). Never load a tool-granting MCP server over plaintext.", "maps_to": [] }
